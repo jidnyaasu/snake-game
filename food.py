@@ -1,3 +1,4 @@
+import time
 from turtle import Turtle
 import random
 
@@ -17,3 +18,10 @@ class Food(Turtle):
         random_x = random.choice(rand_list)
         random_y = random.choice(rand_list)
         self.goto(random_x, random_y)
+        # self.blink()
+
+    def hide(self):
+        self.hideturtle()
+
+    def show(self):
+        self.showturtle()
